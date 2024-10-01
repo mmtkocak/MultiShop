@@ -1,5 +1,3 @@
-Asp.Net Core MultiShop Mikroservis E-Ticaret
-
 <h3>MultiShop Mikroservis E-Ticaret</h3>
 <hr>
 Bu proje, Redis, Docker, MongoDB, PostgreSQL, Onion Architecture, CQRS, Ocelot, Postman ve Identity Server gibi modern teknolojileri kullanarak oluşturulmuş bir mikroservis tabanlı e-ticaret sistemidir.
