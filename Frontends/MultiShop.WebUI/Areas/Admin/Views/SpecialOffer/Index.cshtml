@@ -1,0 +1,45 @@
+﻿@model List<ResultSpecialOfferDto>
+@{
+    ViewData["Title"] = "Özel Teklif İşlemleri";
+    ViewData["v1"] = "Anasayfa";
+    ViewData["v2"] = "Özel Teklif";
+    Layout = "~/Areas/Admin/Views/AdminLayout/Index.cshtml";
+    int count = 0;
+}
+
+<section class="content container-fluid">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="chart-box">
+                <div class="bs-example" data-example-id="bordered-table">
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Teklif Başlığı</th>
+                                <th>Teklif Alt Başlığı</th>
+                                <th>Sil</th>
+                                <th>Güncelle</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in Model)
+                            {
+                                count++;
+                                <tr>
+                                    <td>@count</td>
+                                    <td>@item.Title</td>
+                                    <td>@item.SubTitle</td>
+                                    <td><a href="/Admin/SpecialOffer/DeleteSpecialOffer/@item.SpecialOfferId" class="btn btn-danger">Sil</a></td>
+                                    <td><a href="/Admin/SpecialOffer/UpdateSpecialOffer/@item.SpecialOfferId" class="btn btn-primary">Güncelle</a></td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                    <a href="/Admin/SpecialOffer/CreateSpecialOffer" class="btn btn-success">Yeni Ekle</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+

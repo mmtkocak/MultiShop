@@ -1,0 +1,34 @@
+﻿@model UpdateOfferDiscountDto
+@{
+    ViewData["Title"] = "İndirimler Güncelleme";
+    ViewData["v1"] = "Anasayfa";
+    ViewData["v2"] = "İndirimler";
+    Layout = "~/Areas/Admin/Views/AdminLayout/Index.cshtml";
+}
+
+<section class="content container-fluid">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="chart-box">
+                <div class="bs-example" data-example-id="bordered-table">
+                    <form method="post">
+                        <input  type="hidden" asp-for="OfferDiscountId"/>
+                        <label>Başlık</label>
+                        <input type="text" asp-for="Title" required class="form-control" />
+                        <br />
+                        <label>Alt Başlık</label>
+                        <input type="text" asp-for="SubTitle" required class="form-control" />
+                        <br />
+                        <label>Teklif Görseli</label>
+                        <input type="text" asp-for="ImageUrl" required class="form-control" />
+                        <br />
+                        <label>Buton Başlığı</label>
+                        <input type="text" asp-for="ButtonTitle" required class="form-control" />
+                        <br />
+                        <button class="btn btn-primary">İndirim Güncelle</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

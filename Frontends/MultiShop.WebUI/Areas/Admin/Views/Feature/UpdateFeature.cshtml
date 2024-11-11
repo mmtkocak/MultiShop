@@ -1,0 +1,28 @@
+﻿@model UpdateFeatureDto
+@{
+    ViewData["Title"] = "Öne Çıkan Alan Güncelleme";
+    ViewData["v1"] = "Anasayfa";
+    ViewData["v2"] = "Öne Çıkan Alan";
+    Layout = "~/Areas/Admin/Views/AdminLayout/Index.cshtml";
+}
+
+<section class="content container-fluid">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="chart-box">
+                <div class="bs-example" data-example-id="bordered-table">
+                    <form method="post">
+                        <input type="hidden" asp-for="FeatureId" />
+                        <label>Başlık</label>
+                        <input type="text" asp-for="Title" required class="form-control" />
+                        <br />
+                        <label>İkon</label>
+                        <input type="text" asp-for="Icon" required class="form-control" />
+                        <br />
+                        <button class="btn btn-primary">Öne Çıkan Alan Güncelle</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
