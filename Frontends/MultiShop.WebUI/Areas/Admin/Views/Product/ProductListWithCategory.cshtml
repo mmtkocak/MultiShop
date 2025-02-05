@@ -21,6 +21,7 @@
                                 <th>Ürün Kategori</th>
                                 <th>Sil</th>
                                 <th>Güncelle</th>
+                                <th>Resim Ekle</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -34,7 +35,7 @@
                                     <td>@item.Category.CategoryName </td>
                                     <td><a href="/Admin/Product/DeleteProduct/@item.ProductId" class="btn btn-danger">Sil</a></td>
                                     <td><a href="/Admin/Product/UpdateProduct/@item.ProductId" class="btn btn-primary">Güncelle</a></td>
-
+                                    <td><a href="/Admin/ProductImage/ProductImageDetail/@item.ProductId" class="btn btn-warning">Ürün Görselleri</a></td>
                                 </tr>
                             }
                         </tbody>
