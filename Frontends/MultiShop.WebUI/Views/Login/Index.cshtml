@@ -1,4 +1,5 @@
-﻿@{
+﻿@model CreateLoginDto
+@{
     Layout = null;
 }
 <!DOCTYPE html>
@@ -32,11 +33,11 @@
 
                 <div class="form-row">
                     <label for="first_name">Kullanıcı Adınız</label>
-                    <input type="text"  required class="input-text">
+                    <input type="text" asp-for="Username" required class="input-text">
                 </div>
                 <div class="form-row">
                     <label for="password">Şifreniz</label>
-                    <input type="password"  id="password" class="input-text" required>
+                    <input type="password" asp-for="Password" id="password" class="input-text" required>
                 </div>
 
                 <div class="form-row-last">
