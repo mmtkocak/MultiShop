@@ -4,17 +4,17 @@
     "windowsAuthentication": false,
     "anonymousAuthentication": true,
     "iisExpress": {
-      "applicationUrl": "http://localhost:24202",
-      "sslPort": 44370
+      "applicationUrl": "http://localhost:12384",
+      "sslPort": 44380
     }
   },
   "profiles": {
-    "MultiShop.Cargo.WebApi": {
+    "MultiShop.Payment": {
       "commandName": "Project",
       "dotnetRunMessages": true,
       "launchBrowser": false,
       "launchUrl": "swagger",
-      "applicationUrl": "http://localhost:7073;",
+      "applicationUrl": "https://localhost:7076",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       }

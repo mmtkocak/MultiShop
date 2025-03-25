@@ -17,10 +17,10 @@ namespace MultiShop.IdentityServer
            new ApiResource("ResourceOrder"){Scopes={"OrderFullPermisson"}},
            new ApiResource("ResourceCargo"){Scopes={"CargoFullPermission"} },
            new ApiResource("ResourceBasket"){Scopes={"BasketFullPermission"} },
-           //new ApiResource("ResourceComment"){Scopes={"CommentFullPermission"} },
-           //new ApiResource("ResourcePayment"){Scopes={ "PaymentFullPermission" } },
-           //new ApiResource("ResourceImage"){Scopes={ "ImageFullPermission" } },
-           //new ApiResource("ResourceOcelot"){Scopes={"OcelotFullPermission"} },
+           new ApiResource("ResourceComment"){Scopes={"CommentFullPermission"} },
+           new ApiResource("ResourcePayment"){Scopes={ "PaymentFullPermission" } },
+           new ApiResource("ResourceImage"){Scopes={ "ImageFullPermission" } },
+           new ApiResource("ResourceOcelot"){Scopes={"OcelotFullPermission"} },
            //new ApiResource("ResourceMessage"){Scopes={"MessageFullPermission"} },
            new ApiResource(IdentityServerConstants.LocalApi.ScopeName)
         };
@@ -40,10 +40,10 @@ namespace MultiShop.IdentityServer
             new ApiScope("OrderFullPermisson","Full authority for order operations"),
             new ApiScope("CargoFullPermission","Full authority for cargo operations"),
             new ApiScope("BasketFullPermission","Full authority for basket operations"),
-            //new ApiScope("CommentFullPermission","Full authority for comment operations"),
-            //new ApiScope("PaymentFullPermission","Full authority for payment operations"),
-            //new ApiScope("ImageFullPermission","Full authority for image operations"),
-            //new ApiScope("OcelotFullPermission","Full authority for ocelot operations"),
+            new ApiScope("CommentFullPermission","Full authority for comment operations"),
+            new ApiScope("PaymentFullPermission","Full authority for payment operations"),
+            new ApiScope("ImageFullPermission","Full authority for image operations"),
+            new ApiScope("OcelotFullPermission","Full authority for ocelot operations"),
             //new ApiScope("MessageFullPermission","Full authority for message operations"),
             new ApiScope(IdentityServerConstants.LocalApi.ScopeName)
         };
