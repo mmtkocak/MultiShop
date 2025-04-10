@@ -1,0 +1,28 @@
+﻿@model BasketTotalDto
+<h5 class="section-title position-relative text-uppercase mb-3">
+    <span class="bg-secondary pr-3">Sipariş Özeti</span>
+</h5>
+<div class="bg-light p-30 mb-5">
+    <div class="border-bottom">
+        <h6 class="mb-3">Sipariş Listesi</h6>
+        @foreach (var item in Model.BasketItems)
+        {
+            <div class="d-flex justify-content-between">
+                <p>@item.ProductName (@item.Quantity)</p>
+                <p>@item.Price₺</p>
+            </div>
+        }
+    </div>
+    <div class="border-bottom pt-3 pb-2">
+        <div class="d-flex justify-content-between">
+            <h6 class="font-weight-medium">Kargo Fiyatı</h6>
+            <h6 class="font-weight-medium">₺45</h6>
+        </div>
+    </div>
+    <div class="pt-2">
+        <div class="d-flex justify-content-between mt-2">
+            <h5>Genel Toplam</h5>
+            <h5>@(Model.TotalPrice + 45) ₺</h5>
+        </div>
+    </div>
+</div>
