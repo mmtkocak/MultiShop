@@ -1,0 +1,46 @@
+﻿@model List<ResultSendboxMessageDto>
+@{
+    ViewData["Title"] = "Giden Mesajlar";
+    ViewData["v1"] = "Anasayfa";
+    ViewData["v2"] = "Giden Mesajlar";
+    Layout = "~/Areas/User/Views/UserLayout/Index.cshtml";
+    int count = 0;
+}
+<section class="content container-fluid">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="chart-box">
+                <div class="bs-example" data-example-id="bordered-table">
+                    <table class="table table-bordered table-striped">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Alıcı</th>
+                                <th>Konu</th>
+                                <th>Tarih</th>
+                                <th>Durum</th>
+                                <th>Sil</th>
+                                <th>Mesajı Aç</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in Model)
+                            {
+                                count++;
+                                <tr>
+                                    <th>@count</th>
+                                    <td>@item.SenderId</td>
+                                    <td>@item.Subject</td>
+                                    <td>@(((DateTime)item.MessageDate).ToString("dd-MMM-yyyy"))</td>
+                                    <td>@item.IsRead</td>
+                                    <td><a href="#" class="btn btn-warning">Sil</a></td>
+                                    <td><a href="#" class="btn btn-primary">Detay</a></td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

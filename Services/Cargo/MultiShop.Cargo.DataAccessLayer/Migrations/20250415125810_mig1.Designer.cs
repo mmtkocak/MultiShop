@@ -12,7 +12,7 @@ using MultiShop.Cargo.DataAccessLayer.Concrete;
 namespace MultiShop.Cargo.DataAccessLayer.Migrations
 {
     [DbContext(typeof(CargoContext))]
-    [Migration("20241003182922_mig1")]
+    [Migration("20250415125810_mig1")]
     partial class mig1
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

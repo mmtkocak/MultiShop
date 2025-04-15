@@ -8,4 +8,5 @@ Basket => 7074
 Comment => 7075
 Payment => 7076
 Images => 7077
+Message => 7078
 

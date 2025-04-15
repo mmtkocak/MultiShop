@@ -1,0 +1,40 @@
+﻿@model List<ResultOrderingByUserIdDto>
+@{
+    ViewData["Title"] = "Siparişlerim";
+    ViewData["v1"] = "Anasayfa";
+    ViewData["v2"] = "Siparişler";
+    Layout = "~/Areas/User/Views/UserLayout/Index.cshtml";
+    int count = 0;
+}
+<section class="content container-fluid">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="chart-box">
+                <div class="bs-example" data-example-id="bordered-table">
+                    <table class="table table-bordered table-striped">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Toplam Fiyat</th>
+                                <th>Sipariş Tarihi</th>
+                                <th>Sipariş Detayları</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in Model)
+                            {
+                                count++; 
+                                <tr>
+                                    <th>@count</th>
+                                    <td>@item.TotalPrice</td>
+                                    <td>@(((DateTime)item.OrderDate).ToString("dd-MMM-yyyy"))</td>
+                                    <td><a href="#" class="btn btn-warning">Sipariş Detayları</a></td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

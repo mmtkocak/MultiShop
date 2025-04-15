@@ -1,0 +1,173 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="tr">
+@await Component.InvokeAsync("_UserLayoutHeadComponentPartial")
+
+<body class="sidebar-mini">
+    <div class="wrapper">
+        <header class="main-header dark-bg">
+
+            <!-- Logo -->
+            <a href="../index.html" class="logo dark-bg">
+                <!-- mini logo for sidebar mini 50x50 pixels -->
+                <span class="logo-mini"><img src="/MainDownload-OvioAdmin-html5-template/html/dist/img/logo.png" width="100%"></span>
+                <!-- logo for regular state and mobile devices -->
+                <span class="logo-lg"><img src="/MainDownload-OvioAdmin-html5-template/html/dist/img/logo-lg.png" width="100%"></span>
+            </a>
+
+            <!-- Header Navbar -->
+            <nav class="navbar navbar-static-top" role="navigation">
+                <!-- Sidebar toggle button-->
+                <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button"> <span class="sr-only">Toggle navigation</span> </a>
+                <div class="pull-left search-box">
+                    <form action="#" method="get" class="search-form">
+                        <div class="input-group">
+                            <input type="text" name="search" class="form-control" placeholder="Search...">
+                            <span class="input-group-btn">
+                                <button type="submit" name="search" id="search-btn" class="btn btn-flat"><i class="fa fa-search"></i> </button>
+                            </span>
+                        </div>
+                    </form>
+                    <!-- search form -->
+                </div>
+                <!-- Navbar Right Menu -->
+                <div class="navbar-custom-menu">
+                    <ul class="nav navbar-nav">
+                        <li class="dropdown messages-menu">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                <i class="icon-envelope"></i>
+                                <div class="notify"> <span class="heartbit"></span> <span class="point"></span> </div>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li class="header">You have 4 messages</li>
+                                <li>
+                                    <ul class="menu">
+                                        <li>
+                                            <a href="#">
+                                                <div class="pull-left"><img src="/MainDownload-OvioAdmin-html5-template/html/dist/img/img1.jpg" class="img-circle" alt="User Image"></div>
+                                                <h4>Florence Douglas</h4>
+                                                <p>Lorem ipsum dolor sit amet.</p>
+                                                <p><small><i class="fa fa-clock-o"></i> 2 mins</small></p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <div class="pull-left"><img src="/MainDownload-OvioAdmin-html5-template/html/dist/img/img2.jpg" class="img-circle" alt="User Image"></div>
+                                                <h4>Douglas Smith</h4>
+                                                <p>Lorem ipsum dolor sit amet.</p>
+                                                <p><small><i class="fa fa-clock-o"></i> 15 mins</small></p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <div class="pull-left"><img src="/MainDownload-OvioAdmin-html5-template/html/dist/img/img3.jpg" class="img-circle" alt="User Image"></div>
+                                                <h4>Lorence Deo</h4>
+                                                <p>Lorem ipsum dolor sit amet.</p>
+                                                <p><small><i class="fa fa-clock-o"></i> 35 mins</small></p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <div class="pull-left"><img src="/MainDownload-OvioAdmin-html5-template/html/dist/img/img1.jpg" class="img-circle" alt="User Image"></div>
+                                                <h4>Florence Douglas</h4>
+                                                <p>Lorem ipsum dolor sit amet.</p>
+                                                <p><small><i class="fa fa-clock-o"></i> 2 mins</small></p>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="footer"><a href="#">Check all notifications</a></li>
+                            </ul>
+                        </li>
+                        <!-- messages-menu -->
+                        <!-- Notifications Menu -->
+                        <li class="dropdown notifications-menu">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                <i class="icon-megaphone"></i>
+                                <div class="notify"> <span class="heartbit"></span> <span class="point"></span> </div>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li class="header">Notifications</li>
+                                <li>
+                                    <ul class="menu">
+                                        <li><a href="#"><i class="icon-lightbulb"></i> Lorem ipsum dolor sit amet </a> </li>
+                                        <li><a href="#"><i class="icon-map-pin blue"></i> Lorem ipsum dolor sit amet </a> </li>
+                                        <li><a href="#"><i class="icon-refresh orange"></i> Lorem ipsum dolor sit amet </a> </li>
+                                        <li><a href="#"><i class="icon-map-pin blue"></i> Lorem ipsum dolor sit amet </a> </li>
+                                    </ul>
+                                </li>
+                                <li class="footer"><a href="#">View all</a></li>
+                            </ul>
+                        </li>
+                        <!-- Tasks Menu -->
+                        <!-- User Account Menu -->
+                        <li class="dropdown user user-menu">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown"> <img src="/MainDownload-OvioAdmin-html5-template/html/dist/img/img1.jpg" class="user-image" alt="User Image"> <span class="hidden-xs">Florence Douglas</span> </a>
+                            <ul class="dropdown-menu">
+                                <li class="user-header">
+                                    <div class="pull-left user-img"><img src="/MainDownload-OvioAdmin-html5-template/html/dist/img/img1.jpg" class="img-responsive" alt="User"></div>
+                                    <p class="text-left">Florence Douglas <small>florence@gmail.com</small> </p>
+                                    <div class="view-link text-left"><a href="#">View Profile</a> </div>
+                                </li>
+                                <li><a href="#"><i class="icon-profile-male"></i> My Profile</a></li>
+                                <li><a href="#"><i class="icon-wallet"></i> My Balance</a></li>
+                                <li><a href="#"><i class="icon-envelope"></i> Inbox</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="#"><i class="icon-gears"></i> Account Setting</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="#"><i class="fa fa-power-off"></i> Logout</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <aside class="main-sidebar dark-bg">
+            <section class="sidebar">
+                <div class="user-panel black-bg">
+                    <div class="pull-left image"> <img src="/MainDownload-OvioAdmin-html5-template/html/dist/img/img1.jpg" class="img-circle" alt="User Image"> </div>
+                    <div class="pull-left info">
+                        <p>Kullanıcı Paneli</p>
+                        <a href="#"><i class="fa fa-circle"></i> Aktif</a>
+                    </div>
+                </div>
+                <ul class="sidebar-menu" data-widget="tree">
+                    <li class="header dark-bg">Menu</li>
+                    <li> <a href="/Default/Index"> <i class="fa fa-home"></i> <span>Siteye Git</span></a> </li>
+                    <li> <a href="#x"> <i class="fa fa-th"></i> <span>Aktif Siparişlerim</span></a> </li>
+                    <li> <a href="#x"> <i class="fa fa-th"></i> <span>Geçmiş Siparişlerim</span></a> </li>
+                    <li> <a href="#x"> <i class="fa fa-car"></i> <span>Kargolarım</span></a> </li>
+                    <li> <a href="#x"> <i class="fa fa-user"></i> <span>Profilim</span></a> </li>
+                    <li> <a href="/User/Message/Inbox"> <i class="fa fa-comment"></i> <span>Mesajlarım</span></a> </li>
+                    <li> <a href="#x"> <i class="fa fa-th"></i> <span>Taleplerim</span></a> </li>
+                    <li> <a href="#x"> <i class="fa fa-lock"></i> <span>Çıkış Yap</span></a> </li>
+             
+
+                </ul>
+            </section>
+        </aside>
+        <div class="content-wrapper">
+            <section class="content-header">
+                <h1>@ViewData["Title"]</h1>
+                <ol class="breadcrumb">
+                    <li><a href="#"><i class="fa fa-home"></i> @ViewData["v1"]</a></li>
+                    <li class="active"><i class="fa fa-envelope-o"></i> @ViewData["v2"]</li>
+                    <li class="active"><i class="fa fa-bars"></i> @ViewData["Title"]</li>
+                </ol>
+            </section>
+            @RenderBody()
+        </div>
+        <footer class="main-footer dark-bg">
+            <div class="pull-right hidden-xs"> Version 1.0</div>
+            Copyright &copy; 2025 MultiShop. Tüm Hakları Saklıdır.
+        </footer>
+    </div>
+
+    <script src="/MainDownload-OvioAdmin-html5-template/html//dist/js/jquery.min.js"></script>
+    <script src="/MainDownload-OvioAdmin-html5-template/html//bootstrap/js/bootstrap.min.js"></script>
+    <script src="/MainDownload-OvioAdmin-html5-template/html//dist/js/ovio.js"></script>
+</body>
+</html>
