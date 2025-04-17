@@ -85,6 +85,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Message", "Message", "{D96C
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultiShop.Message", "Services\Message\MultiShop.Message\MultiShop.Message.csproj", "{9F63B94D-9FC5-4405-B7F5-0F16E4AEF179}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SignalRRealTime", "SignalRRealTime", "{E2C43C76-7973-44CA-8534-390621AA066F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultiShop.SignalRRealTimeApi", "Services\SignalRRealTime\MultiShop.SignalRRealTimeApi\MultiShop.SignalRRealTimeApi.csproj", "{0EC4F94A-3ECB-4039-8F9B-EA002836EEC0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -171,6 +175,10 @@ Global
 		{9F63B94D-9FC5-4405-B7F5-0F16E4AEF179}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9F63B94D-9FC5-4405-B7F5-0F16E4AEF179}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9F63B94D-9FC5-4405-B7F5-0F16E4AEF179}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0EC4F94A-3ECB-4039-8F9B-EA002836EEC0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0EC4F94A-3ECB-4039-8F9B-EA002836EEC0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0EC4F94A-3ECB-4039-8F9B-EA002836EEC0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0EC4F94A-3ECB-4039-8F9B-EA002836EEC0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -208,6 +216,8 @@ Global
 		{4D1974CD-B8C6-4ECA-9D80-A30B1EB135C5} = {686112EE-A2D2-4083-9E68-DAA03EF0033B}
 		{D96C0CDB-1CF6-4110-BFD2-982149AB2551} = {FC5A5FF8-C592-4BC7-A984-19A7E6253FA7}
 		{9F63B94D-9FC5-4405-B7F5-0F16E4AEF179} = {D96C0CDB-1CF6-4110-BFD2-982149AB2551}
+		{E2C43C76-7973-44CA-8534-390621AA066F} = {FC5A5FF8-C592-4BC7-A984-19A7E6253FA7}
+		{0EC4F94A-3ECB-4039-8F9B-EA002836EEC0} = {E2C43C76-7973-44CA-8534-390621AA066F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {CF99BBB0-4994-45B2-A0A3-04B5B706B11F}
