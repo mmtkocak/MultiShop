@@ -1,0 +1,32 @@
+﻿@model MultiShop.Images.WebUI.DAL.Entities.ImageDrive
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Google Drive Storage</title>
+
+    <link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="container mt-5">
+        <form method="post" enctype="multipart/form-data">
+            <label>Ürün Adı</label>
+            <input type="text" class="form-control border" name="Name" />
+            <br />
+            <label>Ürün Resmi</label>
+            <input type="file" class="form-control border" name="Photo" />
+            <br />
+
+            <input name="SavedUrl" type="hidden" class="form-control" />
+            <input name="SavedFileName" type="hidden" class="form-control" />
+            <button class="btn btn-outline-info">Kaydet</button>
+
+        </form>
+    </div>
+</body>
+</html>
